@@ -11,6 +11,10 @@
 		D0D5A08629B638E000A291D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5A08529B638E000A291D5 /* ContentView.swift */; };
 		D0D5A08829B638E100A291D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D5A08729B638E100A291D5 /* Assets.xcassets */; };
 		D0D5A08B29B638E100A291D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D5A08A29B638E100A291D5 /* Preview Assets.xcassets */; };
+		D0D5A09729B6397200A291D5 /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5A09629B6397200A291D5 /* FrameworkModel.swift */; };
+		D0D5A09A29B63C0F00A291D5 /* FrameworkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5A09929B63C0F00A291D5 /* FrameworkViewModel.swift */; };
+		D0D5A09C29B63F1C00A291D5 /* Homeview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5A09B29B63F1C00A291D5 /* Homeview.swift */; };
+		D0D5A09E29B640D100A291D5 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D5A09D29B640D100A291D5 /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		D0D5A08529B638E000A291D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0D5A08729B638E100A291D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0D5A08A29B638E100A291D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0D5A09629B6397200A291D5 /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
+		D0D5A09929B63C0F00A291D5 /* FrameworkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkViewModel.swift; sourceTree = "<group>"; };
+		D0D5A09B29B63F1C00A291D5 /* Homeview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homeview.swift; sourceTree = "<group>"; };
+		D0D5A09D29B640D100A291D5 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				D0D5A08329B638E000A291D5 /* Apple_FrameworksApp.swift */,
-				D0D5A08529B638E000A291D5 /* ContentView.swift */,
+				D0D5A09829B63BFC00A291D5 /* ViewModel */,
+				D0D5A09229B6393E00A291D5 /* DataModel */,
+				D0D5A09129B6391F00A291D5 /* Views */,
 				D0D5A08729B638E100A291D5 /* Assets.xcassets */,
 				D0D5A08929B638E100A291D5 /* Preview Content */,
 			);
@@ -65,6 +75,32 @@
 				D0D5A08A29B638E100A291D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0D5A09129B6391F00A291D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D0D5A08529B638E000A291D5 /* ContentView.swift */,
+				D0D5A09B29B63F1C00A291D5 /* Homeview.swift */,
+				D0D5A09D29B640D100A291D5 /* FrameworkDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D0D5A09229B6393E00A291D5 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0D5A09629B6397200A291D5 /* FrameworkModel.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		D0D5A09829B63BFC00A291D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D0D5A09929B63C0F00A291D5 /* FrameworkViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D5A08629B638E000A291D5 /* ContentView.swift in Sources */,
+				D0D5A09C29B63F1C00A291D5 /* Homeview.swift in Sources */,
+				D0D5A09E29B640D100A291D5 /* FrameworkDetailView.swift in Sources */,
+				D0D5A09A29B63C0F00A291D5 /* FrameworkViewModel.swift in Sources */,
 				D0D5A08429B638E000A291D5 /* Apple_FrameworksApp.swift in Sources */,
+				D0D5A09729B6397200A291D5 /* FrameworkModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
