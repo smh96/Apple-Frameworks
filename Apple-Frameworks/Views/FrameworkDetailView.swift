@@ -14,6 +14,7 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
+            Spacer()
             HStack {
                 AsyncImage(url: framework.iconLink) { image in
                     image
@@ -35,25 +36,26 @@ struct FrameworkDetailView: View {
             Text(framework.description)
                 .padding()
             
-            Link(destination: framework.iconLink) {
+            Link(destination: framework.frameworkUrl, label: {
                 HStack {
                     Image(systemName: "safari")
                         .foregroundColor(.white)
-                        
-                    Text("Show more information")
-                       
+                        .symbolRenderingMode(.monochrome)
+                    Text("Tap for more information")
                 }
+                .font(.title3)
                 .foregroundColor(.white)
                 .padding()
                 .background(Color.accentColor)
                 .cornerRadius(8)
-                .offset(y: 150)
-            }
+            })
             
             .padding(50)
             
             Spacer()
-
+            Spacer()
+            Spacer()
+            Spacer()
         }
         
         .preferredColorScheme(.dark)

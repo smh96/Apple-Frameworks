@@ -20,7 +20,7 @@ struct Homeview: View {
                 LazyVGrid(columns: adaptiveColumns, spacing: 10) {
                     ForEach(vm.frameworkList) { framework in
                         Button {
-                            //
+                            vm.frameworkSheet = framework
                         } label: {
                             VStack {
                                 AsyncImage(url: framework.iconLink) { image in
@@ -38,8 +38,9 @@ struct Homeview: View {
                                     .foregroundColor(.white)
                             }
                         }
-
-                        
+                    }
+                    .sheet(item: $vm.frameworkSheet, onDismiss: nil) { framework in
+                        FrameworkDetailView(framework: framework)
                     }
                 }
             }
