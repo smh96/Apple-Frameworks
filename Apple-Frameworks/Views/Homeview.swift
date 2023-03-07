@@ -11,13 +11,13 @@ struct Homeview: View {
     @StateObject var vm = FrameworkViewModel()
     
     private let adaptiveColumns = [
-        GridItem(.adaptive(minimum: 105))
+        GridItem(.adaptive(minimum: 140))
         ]
     
     var body: some View {
         NavigationView {
             ScrollView(showsIndicators: false) {
-                LazyVGrid(columns: adaptiveColumns, spacing: 10) {
+                LazyVGrid(columns: adaptiveColumns, spacing: 20) {
                     ForEach(vm.frameworkList) { framework in
                         Button {
                             vm.frameworkSheet = framework
